@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem 0rem 1rem;
+    /* border: 2px solid green; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* dark mode css  */
+
+.Dark-Mode{
+    border: 1.5px solid black;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Dark{
+    border: 1.5px solid rgb(255, 255, 255);
+    background-color: rgb(31, 31, 31);
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-container-mode{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem 0rem 1rem;
+    /* border: 2px solid green; */
+    background-color: rgb(27, 27, 27);
 }
 
-.App-link {
-  color: #61dafb;
+.top-button{
+    border: 1.5px solid black;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    position: fixed;
+    top: 60;
+    bottom: 2rem;
+    transform: -50% -50%;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#top-btn{
+    display: none;
+}
+
+.top-button-mode{
+    border: 1.5px solid rgb(255, 255, 255);
+    background-color: rgb(31, 31, 31);
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    position: fixed;
+    top: 60;
+    bottom: 2rem;
+    transform: -50% -50%;
+    cursor: pointer;
+    color: white;
 }
